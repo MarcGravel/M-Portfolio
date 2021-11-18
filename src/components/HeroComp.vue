@@ -292,6 +292,7 @@ import AppearAnimate from '../components/AppearAnimate.vue'
                 #flask {
                     bottom: 0;
                     left: 0;
+                    margin-top: 0.5vh;
                 }
 
                 #apache {
@@ -300,6 +301,7 @@ import AppearAnimate from '../components/AppearAnimate.vue'
 
                 #maria {
                     top: 0;
+                    margin-top: 2vh;
                 }
             }
         }

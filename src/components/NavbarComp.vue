@@ -46,6 +46,14 @@
             >
             About Me
             </v-btn>
+            <v-btn
+            class="nav-btns"
+            plain
+            dark
+            @click="pushAnchor('Projects')"
+            >
+            Projects
+            </v-btn>
         </div>
     </div>
 </template>
@@ -60,6 +68,7 @@
                 items: [
                     { title: 'Top', icon: "arrow_upward" },
                     { title: 'About Me', icon: "person_pin" },
+                    { title: 'Projects', icon: "code" },
                 ],
             }
         },
@@ -71,6 +80,10 @@
                 }
                 else if(title == "About Me") {
                     document.getElementById("about-section").scrollIntoView();
+                    this.navDrawer = !this.navDrawer;
+                }
+                else if(title == "Projects") {
+                    document.getElementById("project-section").scrollIntoView();
                     this.navDrawer = !this.navDrawer;
                 } 
                 
@@ -152,9 +165,10 @@
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                grid-template-columns: 50% 50%;
-                width: 40%;
+                grid-template-columns: repeat(3, 33%);
+                width: 50%;
                 justify-self: center;
+                justify-items: center;
 
                 .nav-btns {
                     font-weight: bold;

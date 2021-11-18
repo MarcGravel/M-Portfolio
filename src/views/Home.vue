@@ -8,6 +8,7 @@
             <HeroComp />
         </div>
         <AboutComp id="about-section" />
+        <ProjectComp id="project-section" />
     </div>
 </template>
 
@@ -16,13 +17,15 @@ import HeroComp from '../components/HeroComp.vue'
 import NavbarComp from '../components/NavbarComp.vue'
 import AboutComp from '../components/AboutComp.vue'
 import AppearAnimate from '../components/AppearAnimate.vue'
+import ProjectComp from '../components/ProjectComp.vue'
     export default {
         name: "Home",
         components: {
             HeroComp,
             NavbarComp,
             AboutComp,
-            AppearAnimate
+            AppearAnimate,
+            ProjectComp
         },
         mounted() {
             window.addEventListener('scroll', this.updateScroll);
