@@ -3,10 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
-
-import Appear from '@/components/Appear'
-
-Vue.component("Appear", Appear)
+import 'material-icons/iconfont/material-icons.css'
 
 Vue.config.productionTip = false
 

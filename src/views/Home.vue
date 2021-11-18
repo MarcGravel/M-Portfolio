@@ -1,37 +1,62 @@
 <template>
     <div id="home-page">
-        <Appear :delay="1500" :transition="[0,'-60px']">
-            <Navbar id="navbar" :class="{change_background: scrollPosition > 50}" />
-        </Appear>
-        <Hero />
-        <About id="about-section" />
+        <a id="top"></a>
+        <AppearAnimate :delay="navbarDelay" :transition="[0,'-60px']">
+            <NavbarComp id="navbar" v-show="showNav" :class="{change_background: scrollPosition > 140}" />
+        </AppearAnimate>
+        <div id="hero-section">
+            <HeroComp />
+        </div>
+        <AboutComp id="about-section" />
     </div>
 </template>
 
 <script>
-import Hero from '../components/Hero.vue'
-import Navbar from '../components/Navbar.vue'
-import About from '../components/About.vue'
+import HeroComp from '../components/HeroComp.vue'
+import NavbarComp from '../components/NavbarComp.vue'
+import AboutComp from '../components/AboutComp.vue'
+import AppearAnimate from '../components/AppearAnimate.vue'
     export default {
         name: "Home",
         components: {
-            Hero,
-            Navbar,
-            About,
+            HeroComp,
+            NavbarComp,
+            AboutComp,
+            AppearAnimate
         },
         mounted() {
             window.addEventListener('scroll', this.updateScroll);
+
+            window.addEventListener('scroll', () => {
+              // detects new state and compares it with the old one
+                if ((document.body.getBoundingClientRect()).top > this.scrollPos) {
+                    this.showNav = true;
+                }
+                else
+                {
+                    this.showNav = false;
+                }
+                // saves the new position for iteration.
+                this.scrollPos = (document.body.getBoundingClientRect()).top;
+            })
+        },
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.updateScroll); // To avoid memory leakage
         },
         data() {
             return {
-                scrollPosition: null,
+                scrollPosition: 0,
+                scrollPos: 0,
+                showNav: true,
+                navbarDelay: 2700,
             }
         },
         methods: {
             updateScroll() {
-            this.scrollPosition = window.scrollY
+            this.scrollPosition = window.scrollY;
+            this.navbarDelay = 10;
             }
-        }
+        },
     }
 </script>
 
@@ -46,20 +71,36 @@ import About from '../components/About.vue'
         background-position: center;
         display: grid;
 
+        #top {
+            display: none;
+        }
+
         .change_background {
             background: rgba(0,0,0,0.9);
             box-shadow: 0 2px 4px 0 rgba(0,0,0,.6);
         }
 
         #navbar {
-            position: sticky;
-            top: 0;
+            position: fixed;
+            height: 8vh;
             z-index: 99;
+        }
+
+        #hero-section {
+            margin-top: 8vh;
+            display: grid;
         }
 
         #about-section {
             justify-self: center;
-            border-radius: 5px;
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+        #home-page {
+            .change_background {
+                background: rgba(0,0,0,1);
+            }
         }
     }
 </style>

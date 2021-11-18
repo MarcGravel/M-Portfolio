@@ -1,80 +1,86 @@
 <template>
     <div id="hero-container">
         <div id="hero-info">
-            <Appear :delay="700" :transition="['140vw', 0]">
+            <AppearAnimate :delay="700" :transition="['140vw', 0]">
             <h1 id="name">Marc Gravel</h1>
-            </Appear>
-            <Appear :delay="1100" :duration="2000">
+            </AppearAnimate>
+            <AppearAnimate :delay="1100" :duration="2000">
             <h2 id="position">Full-stack Developer</h2>
-            </Appear>
+            </AppearAnimate>
         </div>
         <div id="techs">
-            <Appear :delay="2150" :transition="[0, '-50vh']">
+            <AppearAnimate :delay="2150" :transition="[0, '-50vh']">
                 <div id="python" class="techType">
                     <img src="@/assets/python.svg" alt="Python Logo">
                     <h4>Python</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2100" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2100" :transition="[0, '-50vh']">
                 <div id="javascript" class="techType">
                     <img src="@/assets/javascript.svg" alt="Javascript Logo">
                     <h4>JavaScript</h4>
                 </div>
-            </Appear> 
-            <Appear :delay="2250" :transition="[0, '-50vh']">
+            </AppearAnimate> 
+            <AppearAnimate :delay="2250" :transition="[0, '-50vh']">
                 <div id="vue" class="techType">
                     <img src="@/assets/vue.svg" alt="vue.js Logo">
                     <h4>Vue.js</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2500" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2500" :transition="[0, '-50vh']">
                 <div id="html5" class="techType">
                     <img src="@/assets/html5.svg" alt="Html Logo">
                     <h4>HTML</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2300" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2300" :transition="[0, '-50vh']">
                 <div id="css3" class="techType">
                     <img src="@/assets/css3.svg" alt="Css Logo">
                     <h4>CSS</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2450" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2450" :transition="[0, '-50vh']">
                 <div id="node" class="techType">
                     <img src="@/assets/node-js.svg" alt="Node.js Logo">
                     <h4>Node.js</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2050" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2050" :transition="[0, '-50vh']">
                 <div id="csharp" class="techType">
                     <img src="@/assets/csharp.svg" alt="csharp Logo">
                     <h4>C#</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2200" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2200" :transition="[0, '-50vh']">
                 <div id="flask" class="techType">
-                    <img src="@/assets/flask.svg" alt="Flask Logo">
+                    <img src="@/assets/flask.png" alt="Flask Logo">
+                    <h4 id=flask-tag>Flask</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2350" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2350" :transition="[0, '-50vh']">
                 <div id="apache" class="techType">
                     <img src="@/assets/apache.svg" alt="Apache Logo">
                     <h4>Apache</h4>
                 </div>
-            </Appear>
-            <Appear :delay="2000" :transition="[0, '-50vh']">
+            </AppearAnimate>
+            <AppearAnimate :delay="2000" :transition="[0, '-50vh']">
                 <div id="maria" class="techType">
                     <img src="@/assets/mariadb.svg" alt="mariaDB Logo">
                     <h4>MariaDB</h4>
                 </div>
-            </Appear>
+            </AppearAnimate>
         </div>
     </div>
 </template>
 
 <script>
+import AppearAnimate from '../components/AppearAnimate.vue'
+
     export default {
-        name: "Hero",
+        name: "HeroComp",
+        components: {
+            AppearAnimate,
+        },
         mounted() {
             this.show = true;
         },
@@ -185,9 +191,13 @@
             #flask {
                 grid-area: 2 / 4;
                 position: relative;
-                bottom: 5vh;
+                bottom: 6vh;
                 left: 5vw;
-                filter: invert(100%)
+                filter: invert(100%);
+
+                #flask-tag {
+                    filter: invert(100%)
+                }
             }
 
             #apache {
@@ -215,6 +225,10 @@
                         width: 30px;
                     }
                 }
+
+                #javascript {
+                    right: 3.5vw;
+                }
             }
         }
     }
@@ -241,7 +255,6 @@
     @media screen and (min-width: 1100px) {
         #hero-container {
             width: 70%;
-            justify-self: center;
             
             #techs {
                 width: 60%;

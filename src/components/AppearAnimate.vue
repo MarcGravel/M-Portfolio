@@ -6,6 +6,7 @@
 
 <script>
     export default {
+        name: "AppearAnimate",
         props: {
             duration: {
                 type: Number,
@@ -43,7 +44,7 @@
                         el.style.transform = "initial";
                     }
                 });
-            }
+            }          
         }
     }
 </script>

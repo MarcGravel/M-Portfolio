@@ -19,6 +19,7 @@ export default {
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
   }
   #wrap {
     overflow-x: hidden;

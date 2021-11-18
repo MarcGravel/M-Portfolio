@@ -32,16 +32,15 @@
 
 <script>
     export default {
-        name: "About",
+        name: "AboutComp",
     }
 </script>
 
 <style lang="scss" scoped>
     #about-section {
-        width: 95vw;
-        min-height: 50vh;
+        width: 100%;
         height: fit-content;
-        background-color: #EAE7DC;
+        background-color: rgba(170, 160, 160, 1);
         display: grid;
         align-items: center;
         justify-items: center;
@@ -55,7 +54,7 @@
 
             h1 {
                 margin-bottom: 3vh;
-                color: #E85A4F;
+                color: #474853;
                 text-align: center;
                 font-size: 2.5em;
             }
@@ -71,6 +70,8 @@
                 p {
                     font-family: Roboto, sans-serif;
                     margin-bottom: 2vh;
+                    color: #474853;
+                    text-align: left;
                 }
 
                 #p-no-marg {
@@ -90,7 +91,6 @@
 
     @media screen and (min-width: 1100px) {
         #about-section {
-            width: 90vw;
             min-height: 30vh;
 
             #info-container {
@@ -109,7 +109,6 @@
 
     @media screen and (min-width: 1500px) {
         #about-section {
-
             #info-container {
                 width: 60vw;
                 grid-template-columns: 50% 50%;
