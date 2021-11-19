@@ -31,7 +31,7 @@ import ProjectComp from '../components/ProjectComp.vue'
             window.addEventListener('scroll', this.updateScroll);
 
             window.addEventListener('scroll', () => {
-              // detects new state and compares it with the old one
+                // detects new state and compares it with the old one
                 if ((document.body.getBoundingClientRect()).top > this.scrollPos) {
                     this.showNav = true;
                 }
@@ -58,7 +58,7 @@ import ProjectComp from '../components/ProjectComp.vue'
             updateScroll() {
             this.scrollPosition = window.scrollY;
             this.navbarDelay = 10;
-            }
+            },
         },
     }
 </script>

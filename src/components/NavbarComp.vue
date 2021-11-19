@@ -31,6 +31,7 @@
         <!--Code for desktop view-->
         <div id="desktop-btn-container">
             <v-btn
+            id="top-btn"
             class="nav-btns"
             plain
             dark
@@ -76,20 +77,23 @@
             pushAnchor(title) {
                 if(title == "Top") {
                     window.scrollTo({top: 0, behavior: 'smooth'});
-                    this.navDrawer = !this.navDrawer;
+                    this.navDrawer = false;
+                    this.$emit('hideNav');
                 }
                 else if(title == "About Me") {
                     document.getElementById("about-section").scrollIntoView();
-                    this.navDrawer = !this.navDrawer;
+                    this.navDrawer = false;
+                    this.$emit('hideNav');
                 }
                 else if(title == "Projects") {
                     document.getElementById("project-section").scrollIntoView();
-                    this.navDrawer = !this.navDrawer;
+                    this.navDrawer = false;
+                    this.$emit('hideNav');
                 } 
                 
             },
             openDrawer() {
-                this.navDrawer = !this.navDrawer;
+                this.navDrawer = true;
             },
         }
     }
@@ -131,7 +135,7 @@
             }
 
             #list-item {
-                color: #86b3d1;
+                color: #868686;
                 border-bottom: 1px black solid;
                 background-color: #5f6070;
                 

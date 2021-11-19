@@ -54,7 +54,8 @@
 
             h1 {
                 margin-bottom: 3vh;
-                color: #474853;
+                color: whitesmoke;
+                opacity: 0.9;
                 text-align: center;
                 font-size: 2.5em;
             }
