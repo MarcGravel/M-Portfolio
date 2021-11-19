@@ -20,7 +20,6 @@
         border: 4px solid #86b3d1;
         padding: 0.25em 1em;
         border-radius: 10px;
-        overflow-x: hidden;
 
         text-shadow: 
             0 0 0.1em rgba(245, 245, 245, 0.336),
@@ -44,8 +43,8 @@
         height: 100%;
 
         transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-        filter: blur(1.5em);
-        opacity: 0.7;
+        filter: blur(1.7em);
+        opacity: 0.5;
     }
 
     #btn::after {

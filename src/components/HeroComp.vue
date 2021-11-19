@@ -102,6 +102,7 @@ import AppearAnimate from '../components/AppearAnimate.vue'
         grid-template-rows: 46vh 46vh;
         justify-items: center;
         align-items: center;
+        overflow: hidden;
 
         #hero-info {
             grid-row: 1;

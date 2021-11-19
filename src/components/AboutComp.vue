@@ -5,7 +5,7 @@
             <img src="@/assets/placeholder.png" alt="Marc Gravel">
             <div id="about-content">
                 <p>
-                    Hello World! I'm Marc Gravel, a junior developer based in Vancouver, B.C. I have a Full-stack Development diploma from 
+                    Hello World! I'm Marc Gravel, a software developer based in Vancouver, B.C. I have a Full-stack Development diploma from 
                     Innotech College where I graduated November 2021.
                 </p>
                 <p>
@@ -17,9 +17,13 @@
                 </p> 
                 <p>
                     I have always sought out growth and development throughout my professional and social life.
-                    I worked my way up from a labor position to a Construction Manager for a large construction company in Alberta.
-                    Over time, my curiosity got the best of me and I decided to try my hand a programming
-                    and I haven't looked back since. I first began my journey in August 2020 and programming has now turned into a life long passion and career.
+                    I worked my way up from a labor position to the Construction Manager for a large construction company in Alberta.
+                    Over time, my curiosity got the best of me and I decided to try my hand at programming.
+                    I haven't looked back since.
+                </p>
+                <p>
+                    I first began my journey in the tech world in August 2020. I enrolled into college shortly after to ensure I was 
+                    learning correctly and efficiently. Programming has now turned into a life long passion and career.
                 </p>
                 <p>
                     Outside of work, I compose and produce electronic music as my other main hobby.
@@ -44,6 +48,7 @@
         display: grid;
         align-items: center;
         justify-items: center;
+        overflow: hidden;
         
         #info-container {
             width: 90vw;
@@ -58,6 +63,7 @@
                 opacity: 0.9;
                 text-align: center;
                 font-size: 2.5em;
+                font-family: 'Proza Libre', sans-serif;
             }
 
             img {
@@ -86,6 +92,10 @@
         #about-section {
             #info-container {
                 width: 70vw;
+
+                h1 {
+                    font-size: 3.5em;
+                }
             }
         }
     }

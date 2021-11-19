@@ -146,7 +146,7 @@
                     img {
                         position: absolute;
                         bottom: 0;
-                        width: 250px;
+                        width: 90%;
                         height: 180px;
                     }
                 }
@@ -160,6 +160,19 @@
                 #header {
                     img {
                         width: 350px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        #item-container {
+            #project {
+                #header {
+                    img {
+                        width: 90%;
+                        max-width: 900px;
                     }
                 }
             }

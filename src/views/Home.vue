@@ -9,6 +9,7 @@
         </div>
         <AboutComp id="about-section" />
         <ProjectComp id="project-section" />
+        <ContactForm id="contact-form" />
     </div>
 </template>
 
@@ -18,6 +19,8 @@ import NavbarComp from '../components/NavbarComp.vue'
 import AboutComp from '../components/AboutComp.vue'
 import AppearAnimate from '../components/AppearAnimate.vue'
 import ProjectComp from '../components/ProjectComp.vue'
+import ContactForm from '../components/ContactForm.vue'
+
     export default {
         name: "Home",
         components: {
@@ -25,7 +28,8 @@ import ProjectComp from '../components/ProjectComp.vue'
             NavbarComp,
             AboutComp,
             AppearAnimate,
-            ProjectComp
+            ProjectComp,
+            ContactForm
         },
         mounted() {
             window.addEventListener('scroll', this.updateScroll);
@@ -64,6 +68,8 @@ import ProjectComp from '../components/ProjectComp.vue'
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@700&display=swap');
+
     #home-page {
         width: 100vw;
         height: fit-content;
@@ -96,6 +102,11 @@ import ProjectComp from '../components/ProjectComp.vue'
 
         #about-section {
             justify-self: center;
+        }
+
+        #contact-form {
+            height: fit-content;
+            padding-bottom: 3vh;
         }
     }
 
