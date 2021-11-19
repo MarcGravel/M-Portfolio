@@ -10,6 +10,9 @@
         <AboutComp id="about-section" />
         <ProjectComp id="project-section" />
         <ContactForm id="contact-form" />
+        <AppearAnimate :delay="3500" :transition="[0,'100px']">
+            <ContactMeBtn />
+        </AppearAnimate>
     </div>
 </template>
 
@@ -20,6 +23,7 @@ import AboutComp from '../components/AboutComp.vue'
 import AppearAnimate from '../components/AppearAnimate.vue'
 import ProjectComp from '../components/ProjectComp.vue'
 import ContactForm from '../components/ContactForm.vue'
+import ContactMeBtn from '../components/ContactMeBtn.vue'
 
     export default {
         name: "Home",
@@ -29,7 +33,8 @@ import ContactForm from '../components/ContactForm.vue'
             AboutComp,
             AppearAnimate,
             ProjectComp,
-            ContactForm
+            ContactForm,
+            ContactMeBtn
         },
         mounted() {
             window.addEventListener('scroll', this.updateScroll);

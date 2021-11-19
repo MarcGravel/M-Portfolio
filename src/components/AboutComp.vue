@@ -121,7 +121,7 @@
     @media screen and (min-width: 1500px) {
         #about-section {
             #info-container {
-                width: 60vw;
+                width: 70vw;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: 20% 80%;
 
