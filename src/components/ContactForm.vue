@@ -52,16 +52,13 @@
             height: fit-content;
             margin: 5vh 0 5vh 0;
             padding: 2vh 2vw 2vh 2vw;
-            background-color: rgba(170, 160, 160, 0.9);
-            border-radius: 5px;
+            background-color: rgba(90, 86, 86, 0.9);
+            border-radius: 10px;
             color: whitesmoke;
 
-            p {
-                color: #2f3038;
-            }
-
-            p > a {
+            p, a {
                 color: whitesmoke;
+                opacity: 0.8;
             }
 
             #form-action {
@@ -74,6 +71,7 @@
                     width: 90%;
                     padding: 5px;
                     background-color: whitesmoke;
+                    opacity: 0.9;
                     border-radius: 5px;
                 }
                 
