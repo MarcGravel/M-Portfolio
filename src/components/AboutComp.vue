@@ -44,12 +44,12 @@
     #about-section {
         width: 100%;
         height: fit-content;
-        background: rgb(170,160,160);
-        background: linear-gradient(232deg, rgba(170,160,160,1) 0%, rgba(150,141,141,1) 100%);
         display: grid;
         align-items: center;
         justify-items: center;
         overflow: hidden;
+        background: black;
+        background: linear-gradient(rgba(255,255,255,0.0), black, black, rgba(255,255,255,0.0));
         
         #info-container {
             width: 90vw;
@@ -60,7 +60,7 @@
 
             h1 {
                 margin-bottom: 3vh;
-                color: whitesmoke;
+                color: #86b3d1;
                 opacity: 0.9;
                 text-align: center;
                 font-size: 2.5em;
@@ -78,7 +78,8 @@
                 p {
                     font-family: Roboto, sans-serif;
                     margin-bottom: 2vh;
-                    color: #474853;
+                    color: whitesmoke;
+                    opacity: 0.9;
                     text-align: left;
                 }
 

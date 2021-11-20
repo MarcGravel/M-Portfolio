@@ -88,7 +88,6 @@ import ProjectItem from '../components/ProjectItem.vue'
     #project-section {
         width: 100vw;
         height: fit-content;
-        background-color: rgba(170, 160, 160, 0.5);
         display: grid;
         align-items: center;
         justify-items: center;
@@ -102,7 +101,7 @@ import ProjectItem from '../components/ProjectItem.vue'
 
             h1 {
                 margin-bottom: 1vh;
-                color: whitesmoke;
+                color: #86b3d1;
                 text-align: center;
                 font-size: 2.5em;
                 font-family: 'Proza Libre', sans-serif;

@@ -61,7 +61,6 @@
 
     #btn:hover, #btn:focus {
         background: #86b3d1a2;
-        color: rgb(0, 0, 0);
         text-shadow: none; 
     }
 

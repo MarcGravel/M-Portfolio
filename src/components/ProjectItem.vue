@@ -60,8 +60,8 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             padding-bottom: 2vh;
-            background: rgb(71,72,83);
-            background: radial-gradient(circle, rgba(71,72,83,1) 0%, rgba(90,92,105,1) 100%);
+            background: rgb(49,60,82);
+            background: radial-gradient(circle, rgb(46, 48, 51) 90%, rgba(214,214,214,1) 100%);
             color: whitesmoke;
 
             h3, h4, a, p {
@@ -125,8 +125,9 @@
 
                 #additional {
                     margin-top: 2vh;
+                    margin-bottom: 5vh;
                     text-align: start;
-                    color: rgb(219, 212, 212);
+                    color: #a1d3f5;
                 }
             }
         }
