@@ -13,6 +13,7 @@
         <AppearAnimate :delay="3500" :transition="[0,'100px']">
             <ContactMeBtn />
         </AppearAnimate>
+        <BottomFooter />
     </div>
 </template>
 
@@ -24,6 +25,7 @@ import AppearAnimate from '../components/AppearAnimate.vue'
 import ProjectComp from '../components/ProjectComp.vue'
 import ContactForm from '../components/ContactForm.vue'
 import ContactMeBtn from '../components/ContactMeBtn.vue'
+import BottomFooter from '../components/BottomFooter.vue'
 
     export default {
         name: "Home",
@@ -34,7 +36,8 @@ import ContactMeBtn from '../components/ContactMeBtn.vue'
             AppearAnimate,
             ProjectComp,
             ContactForm,
-            ContactMeBtn
+            ContactMeBtn,
+            BottomFooter
         },
         mounted() {
             window.addEventListener('scroll', this.updateScroll);
@@ -111,7 +114,6 @@ import ContactMeBtn from '../components/ContactMeBtn.vue'
 
         #contact-form {
             height: fit-content;
-            padding-bottom: 3vh;
         }
     }
 

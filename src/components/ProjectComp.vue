@@ -136,7 +136,8 @@ import ProjectItem from '../components/ProjectItem.vue'
                     justify-self: center;
                     align-self: center;
                     display: grid;
-                    width: 100%;
+                    width: 95%;
+                    max-width: 500px;
                     height: 100%;
                     align-items: center;
                     justify-items: center;
@@ -159,6 +160,10 @@ import ProjectItem from '../components/ProjectItem.vue'
 
                 #proj-title {
                     grid-column: 1 / 4;
+                }
+
+                #git-link-container {
+                    width: 92%;
                 }
             }
         }

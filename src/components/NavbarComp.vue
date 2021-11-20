@@ -55,6 +55,14 @@
             >
             Projects
             </v-btn>
+            <v-btn
+            class="nav-btns"
+            plain
+            dark
+            @click="pushAnchor('Contact Me')"
+            >
+            Contact
+            </v-btn>
         </div>
     </div>
 </template>
@@ -70,6 +78,7 @@
                     { title: 'Top', icon: "arrow_upward" },
                     { title: 'About Me', icon: "person_pin" },
                     { title: 'Projects', icon: "code" },
+                    { title: 'Contact Me', icon: "chat_bubble_outline" },
                 ],
             }
         },
@@ -87,6 +96,11 @@
                 }
                 else if(title == "Projects") {
                     document.getElementById("project-section").scrollIntoView();
+                    this.navDrawer = false;
+                    this.$emit('hideNav');
+                }
+                else if(title == "Contact Me") {
+                    document.getElementById("contact-form").scrollIntoView();
                     this.navDrawer = false;
                     this.$emit('hideNav');
                 } 
@@ -169,7 +183,7 @@
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                grid-template-columns: repeat(3, 33%);
+                grid-template-columns: repeat(4, 25%);
                 width: 50%;
                 justify-self: center;
                 justify-items: center;
