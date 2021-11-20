@@ -39,6 +39,7 @@
             >
             Top
             </v-btn>
+            <div class="break-line"></div>
             <v-btn
             class="nav-btns"
             plain
@@ -47,6 +48,7 @@
             >
             About Me
             </v-btn>
+            <div class="break-line"></div>
             <v-btn
             class="nav-btns"
             plain
@@ -55,6 +57,7 @@
             >
             Projects
             </v-btn>
+            <div class="break-line"></div>
             <v-btn
             class="nav-btns"
             plain
@@ -160,6 +163,7 @@
                     
                     #drawer-icon, #drawer-title {
                         font-size: 1.5em;
+                        color: #86b3d1;
                     }
                 }
             }
@@ -183,8 +187,8 @@
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                grid-template-columns: repeat(4, 25%);
-                width: 50%;
+                grid-template-columns: 24% 1% 24% 1% 24% 1% 24%;
+                width: 90%;
                 justify-self: center;
                 justify-items: center;
 
@@ -193,6 +197,29 @@
                     color: #86b3d1;
                     font-size: 2em;
                 }
+
+                .break-line {
+                    width: 10%;
+                    height: 50%;
+                    background-color: whitesmoke;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        #navbar {
+            #desktop-btn-container {
+                width: 70%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1900px) {
+        #navbar {
+            #desktop-btn-container {
+                width: 60%;
             }
         }
     }

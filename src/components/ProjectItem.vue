@@ -60,7 +60,8 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             padding-bottom: 2vh;
-            background-color: #474853;
+            background: rgb(71,72,83);
+            background: radial-gradient(circle, rgba(71,72,83,1) 0%, rgba(90,92,105,1) 100%);
             color: whitesmoke;
 
             h3, h4, a, p {

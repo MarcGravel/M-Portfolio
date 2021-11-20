@@ -1,11 +1,11 @@
 <template>
     <div id="footer">
         <div id="foot-links">
-            <a href="https://www.linkedin.com/in/marc-gravel-1208061ba/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/marc-gravel-1208061ba/" target="_blank">LinkedIn</a>
             <p>&nbsp;-&nbsp;</p>
-            <a href="https://github.com/MarcGravel">Github</a>
+            <a href="https://github.com/MarcGravel" target="_blank">Github</a>
             <p>&nbsp;-&nbsp;</p>
-            <a href="mailto:gravel.m@outlook.com">gravel.m@outlook.com</a>
+            <a href="mailto:gravel.m@outlook.com" target="_blank">gravel.m@outlook.com</a>
         </div>
         <div id="copyright">
             <p>© 2021 - Web design by Marc Gravel</p>
@@ -31,7 +31,7 @@
 
         #foot-links {
             height: 2vh;
-            
+
             a, p {
                 display: inline-block;
                 color: whitesmoke;

@@ -5,7 +5,7 @@
             <img src="@/assets/placeholder.png" alt="Marc Gravel">
             <div id="about-content">
                 <p>
-                    Hello World! I'm Marc Gravel, a software developer based in Vancouver, B.C. I have a Full-stack Development diploma from 
+                    Hello World! I'm Marc Gravel, a software developer based in Vancouver, B.C. I have a Full-stack Development Diploma from 
                     Innotech College where I graduated November 2021.
                 </p>
                 <p>
@@ -44,7 +44,8 @@
     #about-section {
         width: 100%;
         height: fit-content;
-        background-color: rgba(170, 160, 160, 1);
+        background: rgb(170,160,160);
+        background: linear-gradient(232deg, rgba(170,160,160,1) 0%, rgba(150,141,141,1) 100%);
         display: grid;
         align-items: center;
         justify-items: center;

@@ -32,11 +32,11 @@ import ProjectItem from '../components/ProjectItem.vue'
                         buildDate: "Oct-Nov 2021",
                         url: "https://jobjug.ca",
                         img: "jobjugScreen.png",
-                        description: "JobJug is a project management web application meant for internal use between employees, managers, and admins. There is no ability to sign up for security purposes. All new users are created within the logged in app by existing managers or admin. JobJug allows users to log in to their personal profile to get up to date info about the companies current and past projects. The site is equipped with automatic invoicing and email services. JobJug is mobile, tablet, and desktop friendly.",
+                        description: "JobJug is a project management web application meant for internal use between employees, managers, and admins. For security purposes, there is no ability to sign up. You can contact me for login credentials. All new users are created within the logged in app by existing managers or admin. JobJug allows users to log in to their personal profile to get up-to-date info about the company's current and past projects. The site is also equipped with automatic invoicing and email services. JobJug is mobile, tablet, and desktop friendly.",
                         frontend: "https://github.com/MarcGravel/JobJug",
                         backend: "https://github.com/MarcGravel/JobJugBackendApi",
                         skills: "JavaScript, Vue.js, HTML, CSS, SCSS, Python, Flask, MariaDB, SQL, Apache, Node.js, PM2",
-                        additional: "For security reasons, please contact me directly for a temporary account to view and enjoy the site.",
+                        additional: "Please contact me directly for a temporary account to view and enjoy the site.",
                     },
                     tweeter: {
                         name: "Tweeter",
@@ -45,11 +45,11 @@ import ProjectItem from '../components/ProjectItem.vue'
                         buildDate: "Sep-Oct 2021",
                         url: "https://thetweeter.ga",
                         img: "tweeterScreen.png",
-                        description: "Tweeter is a social media website based off existing social media services. Tweeter allows users to log-in/sign-up to their own personal profile. From there users are able to edit their profile and add their own personal touch, including photos and bios. Users can create new posts, comment on existing posts, follow other users, and more! To navigate site, use the navigation bars or click on usernames, posts, images, notifications, or any button. Tweeter is mobile, tablet, and desktop friendly.",
+                        description: "Tweeter is a social media website based on existing social media services. Tweeter allows users to log-in/sign-up to their own personal profile. From there users are able to edit their profile and add their own personal touch, including photos and bios. Users can create new posts, comment on existing posts, follow other users, receive notifications, and more! To navigate the site, use the navigation bars or click on usernames, posts, images, notifications, or any button. Tweeter is mobile, tablet, and desktop friendly.",
                         frontend: "https://github.com/MarcGravel/Tweeter",
                         backend: "https://github.com/MarcGravel/TweeterBackendApi",
                         skills: "JavaScript, Vue.js, HTML, CSS, SCSS, Python, Flask, MariaDB, SQL, Apache, Node.js, PM2",
-                        additional: "Please feel free to sign up and check out the site. Alternatively, you would like login credentials for an existing account, please contact me directly.",
+                        additional: "Please feel free to sign up and check out the site. Alternatively, if you would like login credentials for an existing account, please contact me directly.",
                     },
                     kneadPizza: {
                         name: "Knead Pizza",
@@ -58,9 +58,10 @@ import ProjectItem from '../components/ProjectItem.vue'
                         buildDate: "July 2021",
                         url: "https://kneadpizza.ga",
                         img: "kneadpizzaScreen.png",
-                        description: "Knead Pizza is a mock website for a hypothetical pizza restaurant. This is a static website and is created with pure CSS/SASS and HTML only. It displays information about the restaurant, its menu, an about page, and contact details.",
+                        description: "Knead Pizza is a mock website for a pizza restaurant. This is a static website and is created with pure CSS/SASS and HTML only. It displays information about the restaurant, its menu, an about page, and contact details.",
                         frontend: "https://github.com/MarcGravel/kneadPizza",
                         skills: "HTML, CSS, SCSS, Apache",
+                        additional: "No credentials required. This is a static website with only navigation interactivity."
                     },
                     thisSite: {
                         name: "This website",
@@ -141,7 +142,8 @@ import ProjectItem from '../components/ProjectItem.vue'
                     height: 100%;
                     align-items: center;
                     justify-items: center;
-                    background-color: #474853;
+                    background: rgb(71,72,83);
+                    background: radial-gradient(circle, rgba(71,72,83,1) 0%, rgba(90,92,105,1) 100%);
                     border: 1px solid rgba(68, 68, 68, 0.753);
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;

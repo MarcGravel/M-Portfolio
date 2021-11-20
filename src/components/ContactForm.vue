@@ -3,7 +3,7 @@
         <div id="form">
             <h1>Let's work together.</h1>
             <p>
-                Use the form below to contact me for job opportunities, a resume, or to discuss your project and work towards a quote.
+                Use the form below to contact me for a copy of my resume, job opportunities, or to discuss your project and work towards a quote.
                 You can also e-mail me directly at <a href="mailto:gravel.m@outlook.com">gravel.m@outlook.com</a>
             </p>
             <form id="form-action" action="https://formsubmit.co/gravel.m@outlook.com" method="POST">
