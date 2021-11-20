@@ -93,19 +93,49 @@
                     this.$emit('hideNav');
                 }
                 else if(title == "About Me") {
-                    document.getElementById("about-section").scrollIntoView();
+                    let currentPos = document.body.getBoundingClientRect().top;
+                    let elPos = document.getElementById("about-section").getBoundingClientRect().top;
+                    if (currentPos > elPos) {
+                        document.getElementById("about-section").scrollIntoView();
+                    }
+                    else {
+                        let yOffset = -40;
+                        let elm = document.getElementById("about-section");
+                        let adj = elm.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                        window.scrollTo({top: adj, behavior: 'smooth'});
+                    }
                     this.navDrawer = false;
-                    this.$emit('hideNav');
                 }
                 else if(title == "Projects") {
-                    document.getElementById("project-section").scrollIntoView();
+                    let currentPos = document.body.getBoundingClientRect().top;
+                    let elPos = document.getElementById("project-section").getBoundingClientRect().top;
+                    if (currentPos > elPos) {
+                        document.getElementById("project-section").scrollIntoView();
+                    }
+                    else {
+                        let yOffset = -50;
+                        let elm = document.getElementById("project-section");
+                        let adj = elm.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                        window.scrollTo({top: adj, behavior: 'smooth'});
+                    }
                     this.navDrawer = false;
-                    this.$emit('hideNav');
                 }
                 else if(title == "Contact Me") {
-                    document.getElementById("contact-form").scrollIntoView();
+                    let currentPos = document.body.getBoundingClientRect().top;
+                    let elPos = document.getElementById("contact-form").getBoundingClientRect().top;
+                    if (currentPos > elPos) {
+                        document.getElementById("contact-form").scrollIntoView();
+                    }
+                    else {
+                        let yOffset = -40;
+                        let elm = document.getElementById("contact-form");
+                        let adj = elm.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                        window.scrollTo({top: adj, behavior: 'smooth'});
+                    }
                     this.navDrawer = false;
-                    this.$emit('hideNav');
                 } 
                 
             },

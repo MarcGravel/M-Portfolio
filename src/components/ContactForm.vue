@@ -56,9 +56,13 @@
             border-radius: 10px;
             color: whitesmoke;
 
-            p, a {
+            p {
                 color: whitesmoke;
                 opacity: 0.8;
+            }
+            
+            p > a {
+                color: whitesmoke;
             }
 
             #form-action {
