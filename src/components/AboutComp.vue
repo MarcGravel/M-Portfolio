@@ -31,6 +31,7 @@
                 </p>
             </div>
         </div>
+        <hr id="main-break">
     </div>  
 </template>
 
@@ -87,6 +88,10 @@
                     margin-bottom: 1vh;
                 }
             }
+        }
+
+        #main-break {
+            width: 60vw;
         }
     }
 

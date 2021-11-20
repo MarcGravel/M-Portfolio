@@ -9,6 +9,7 @@
                 <GitLinkBtn />
             </div>
         </div>
+        <hr id="main-break">
     </div>
 </template>
 
@@ -106,6 +107,10 @@ import ProjectItem from '../components/ProjectItem.vue'
                 font-size: 2.5em;
                 font-family: 'Proza Libre', sans-serif;
             }
+        }
+        
+        #main-break {
+            width: 60vw;
         }
     }
 

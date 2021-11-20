@@ -56,12 +56,13 @@
             width: 100%;
             max-width: 500px;
             height: fit-content;
-            border: 1px solid rgba(68, 68, 68, 0.753);
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
             padding-bottom: 2vh;
-            background: rgb(49,60,82);
-            background: radial-gradient(circle, rgb(46, 48, 51) 90%, rgba(214,214,214,1) 100%);
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, rgba(9,9,9,1) 0%, rgba(9,9,9,0) 150%);
+            box-shadow: 2px 0 30px 40px rgba(9,9,9,.4);
+            border: 1px solid rgb(37, 37, 37);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
             color: whitesmoke;
 
             h3, h4, a, p {
