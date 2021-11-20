@@ -6,7 +6,7 @@
             id="nav-drawer"
             v-model="navDrawer"
             absolute
-            color="#474853">
+            color="#2b2b2b">
 
             <h1 id="drawer-logo">M.G</h1>
             <hr>
@@ -154,7 +154,7 @@
             #list-item {
                 color: #868686;
                 border-bottom: 1px black solid;
-                background-color: #5f6070;
+                background-color: #474853;
                 
 
                 #bar-elem-container {
