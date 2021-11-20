@@ -79,7 +79,7 @@
                 p {
                     font-family: Roboto, sans-serif;
                     margin-bottom: 2vh;
-                    color: whitesmoke;
+                    color: rgba(245, 245, 245, 0.856);
                     opacity: 0.9;
                     text-align: left;
                 }

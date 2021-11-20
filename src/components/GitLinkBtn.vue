@@ -20,6 +20,7 @@
         border: 4px solid #86b3d1;
         padding: 0.25em 1em;
         border-radius: 10px;
+        margin: 0 2vw 0 2vw;
 
         text-shadow: 
             0 0 0.1em rgba(245, 245, 245, 0.336),

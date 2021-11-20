@@ -108,7 +108,7 @@ import ProjectItem from '../components/ProjectItem.vue'
                 font-family: 'Proza Libre', sans-serif;
             }
         }
-        
+
         #main-break {
             width: 60vw;
         }
@@ -146,8 +146,8 @@ import ProjectItem from '../components/ProjectItem.vue'
                     height: 100%;
                     align-items: center;
                     justify-items: center;
-                    background: rgb(71,72,83);
-                    background: radial-gradient(circle, rgba(71,72,83,1) 0%, rgba(90,92,105,1) 100%);
+                    background: rgb(0,0,0);
+                    background: radial-gradient(circle, rgba(9,9,9,1) 0%, rgba(9,9,9,0) 150%);
                     border: 1px solid rgba(68, 68, 68, 0.753);
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;

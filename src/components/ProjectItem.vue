@@ -63,7 +63,7 @@
             border: 1px solid rgb(37, 37, 37);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            color: whitesmoke;
+            color: rgba(245, 245, 245, 0.856);
 
             h3, h4, a, p {
                 opacity: 0.9;
