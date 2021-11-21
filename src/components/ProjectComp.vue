@@ -69,6 +69,7 @@ import ProjectItem from '../components/ProjectItem.vue'
                         color: "#656779",
                         type: "- Portfolio",
                         buildDate: "Nov 2021",
+                        url: "https://marcgravel.dev",
                         img: "portfolioScreen.png",
                         description: "If you would like to see the code for this website, please click the link below",
                         frontend: "https://github.com/MarcGravel/M-Portfolio",

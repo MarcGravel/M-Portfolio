@@ -5,7 +5,7 @@
             @click="goToForm()"
             >
             <v-icon>chat_bubble_outline</v-icon>
-            Get a quote
+            Contact me
         </v-btn>
     </div>
 </template>
