@@ -9,7 +9,7 @@
                     Innotech College where I graduated November 2021.
                 </p>
                 <p>
-                    I crave knowledge and love problem solving. I enjoy programming at either end of the tech stack whether it's creating well rounded and effective API's, 
+                    I crave knowledge and I love problem solving. I enjoy programming at either end of the tech stack whether it's creating well rounded and effective API's, 
                     optimizing database queries, or creating seamless and simple UI's for a fluid digital experience.
                 </p>
                 <p id="p-no-marg">

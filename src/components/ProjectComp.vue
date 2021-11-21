@@ -59,7 +59,7 @@ import ProjectItem from '../components/ProjectItem.vue'
                         buildDate: "July 2021",
                         url: "https://kneadpizza.ga",
                         img: "kneadpizzaScreen.png",
-                        description: "Knead Pizza is a mock website for a pizza restaurant. This is a static website and is created with pure CSS/SASS and HTML only. It displays information about the restaurant, its menu, an about page, and contact details.",
+                        description: "Knead Pizza is a mock website for a pizza restaurant. This is a static website and is created with CSS/SASS and HTML only. It displays information about the restaurant, its menu, an about page, and contact details.",
                         frontend: "https://github.com/MarcGravel/kneadPizza",
                         skills: "HTML, CSS, SCSS, Apache",
                         additional: "No credentials required. This is a static website with only navigation interactivity."
