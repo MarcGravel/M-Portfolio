@@ -2,7 +2,7 @@
     <div id="about-section">
         <div id="info-container">
             <h1>About me</h1>
-            <img src="@/assets/placeholder.png" alt="Marc Gravel">
+            <img src="@/assets/nov21Mg.png" alt="Marc Gravel">
             <div id="about-content">
                 <p>
                     Hello World! I'm Marc Gravel, a software developer based in Vancouver, B.C. I have a Full-stack Development Diploma from 
@@ -73,6 +73,7 @@
                 width: 80vw;
                 max-width: 400px;
                 margin-bottom: 3vh;
+                border-radius: 2px;
             }
 
             #about-content {

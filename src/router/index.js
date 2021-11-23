@@ -10,6 +10,10 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  { 
+    path: '/:pathMatch(.*)*', 
+    redirect: '/'
+  }
 ]
 
 const router = new VueRouter({
