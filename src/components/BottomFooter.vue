@@ -59,7 +59,7 @@
                             <p><a href="https://iconscout.com/icons/mariadb" target="_blank">Mariadb Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a></p>
                         </v-list-item>
                         <v-list-item class="att-list-items">
-                            <p><a href="https://iconscout.com/icons/apache" target="_blank">Apache Icon</a> by <a href="https://iconscout.com/contributors/icon-54" target="_blank">Icon 54</a></p>
+                            <p><a href="https://iconscout.com/icons/react" target="_blank">React Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a></p>
                         </v-list-item>
                         <v-list-item class="att-list-items">
                             <p><a href="https://iconscout.com/icons/html5" target="_blank">Html5 Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a></p>

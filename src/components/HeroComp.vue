@@ -59,8 +59,8 @@
             </AppearAnimate>
             <AppearAnimate :delay="2350" :transition="[0, '-50vh']">
                 <div id="apache" class="techType">
-                    <img src="@/assets/apache.svg" alt="Apache Logo">
-                    <h4>Apache</h4>
+                    <img src="@/assets/react.svg" alt="React Logo">
+                    <h4>React.js</h4>
                 </div>
             </AppearAnimate>
             <AppearAnimate :delay="2000" :transition="[0, '-50vh']">
@@ -183,17 +183,17 @@ import AppearAnimate from '../components/AppearAnimate.vue'
             }
 
             #csharp {
-                grid-area: 2 / 5;
-                position: relative;
-                top: 6vh;
-                right: 1vw;
-            }
-
-            #flask {
                 grid-area: 2 / 4;
                 position: relative;
                 bottom: 6vh;
                 left: 5vw;
+            }
+
+            #flask {
+                grid-area: 2 / 5;
+                position: relative;
+                top: 6vh;
+                right: 1vw;
                 filter: invert(100%);
 
                 #flask-tag {
@@ -286,13 +286,13 @@ import AppearAnimate from '../components/AppearAnimate.vue'
                 }
 
                 #csharp {
-                    top: 0;
-                    right: 0;
+                    bottom: 0;
+                    left: 0;
                 }
 
                 #flask {
-                    bottom: 0;
-                    left: 0;
+                    top: 0;
+                    right: 0;
                     margin-top: 0.5vh;
                 }
 
