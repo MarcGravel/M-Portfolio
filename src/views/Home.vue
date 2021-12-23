@@ -81,7 +81,11 @@ import BottomFooter from '../components/BottomFooter.vue'
     #home-page {
         width: 100vw;
         height: fit-content;
-        background: transparent;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('~@/assets/heroimage.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
         display: grid;
 
         #top {
