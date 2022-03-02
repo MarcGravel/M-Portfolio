@@ -5,9 +5,9 @@
             <div v-for="project in allProjects" :key="project.name" class="project-items">
                 <ProjectItem :project="project" />
             </div>
-            <div id="git-link-container">
-                <GitLinkBtn />
-            </div>
+        </div>
+        <div id="git-link-container">
+            <GitLinkBtn />
         </div>
         <hr id="main-break">
     </div>
@@ -26,6 +26,17 @@ import ProjectItem from '../components/ProjectItem.vue'
         data() {
             return {
                 allProjects: {
+                    cas: {
+                        name: "Calgary Animal Save",
+                        color: "#7a6a81",
+                        type: "Non-profit animal rights organization",
+                        buildDate: "Dec 2021 - March 2022",
+                        url: "https://calgaryanimalsave.com",
+                        img: "casScreen.png",
+                        description: "I built this website from the ground up for a Calgary based animal rights organization. The project included building the database, back-end API, and front-end from scratch. The client wanted the ability to post and update aspect of the site (for example new campaigns), so I built a who user/admin aspect to the page that can only be access with proper credentials. The most challenging part of building this website was ensuring the user input would properly render valid html on user submit of a textarea + images. This project also includes a shop and donate section in which stripe was integrated into the application to provide secure and reliable payments. Finally, the amount of data and images on this website required a lot of time spent on SEO and performance optimization.",
+                        skills: "API integration, SEO + deployment performance, JavaScript, Vue.js, HTML, CSS, SCSS, Python, Flask, MariaDB, SQL, Apache, Node.js, PM2",
+                        additional: "The code is not public as this is a live real-world website. Please contact me for questions or a run-down on any aspect of this project.",
+                    },
                     jobjug: {
                         name: "JobJug",
                         color: "#86b3d1",
@@ -108,6 +119,10 @@ import ProjectItem from '../components/ProjectItem.vue'
                 font-size: 2.5em;
                 font-family: 'Proza Libre', sans-serif;
             }
+        }
+
+        #git-link-container {
+            margin: 20px 0 100px 0;
         }
 
         #main-break {
