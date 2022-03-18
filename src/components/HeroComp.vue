@@ -46,9 +46,9 @@
                 </div>
             </AppearAnimate>
             <AppearAnimate :delay="2050" :transition="[0, '-50vh']">
-                <div id="csharp" class="techType">
-                    <img src="@/assets/csharp.svg" alt="csharp Logo">
-                    <h4>C#</h4>
+                <div id="java" class="techType">
+                    <img src="@/assets/java.svg" alt="Java Logo">
+                    <h4>Java</h4>
                 </div>
             </AppearAnimate>
             <AppearAnimate :delay="2200" :transition="[0, '-50vh']">
@@ -182,7 +182,7 @@ import AppearAnimate from '../components/AppearAnimate.vue'
                 bottom: 4vh;
             }
 
-            #csharp {
+            #java {
                 grid-area: 2 / 4;
                 position: relative;
                 bottom: 6vh;
@@ -285,9 +285,10 @@ import AppearAnimate from '../components/AppearAnimate.vue'
                     bottom: 0;
                 }
 
-                #csharp {
+                #java {
                     bottom: 0;
                     left: 0;
+                    margin-top: -1.6vh;
                 }
 
                 #flask {

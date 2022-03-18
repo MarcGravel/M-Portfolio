@@ -44,7 +44,7 @@
                             <p><a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a></p>
                         </v-list-item>
                         <v-list-item class="att-list-items">
-                            <p><a href="https://iconscout.com/icons/csharp" target="_blank">Csharp Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a></p>
+                            <p><a href="https://iconscout.com/icons/java" target="_blank">Java Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a></p>
                         </v-list-item>
                         <v-list-item class="att-list-items">
                             <p><a href="https://iconscout.com/icons/vue-dot-js" target="_blank">Vue Dot Js Icon</a> by <a href="https://iconscout.com/contributors/icon-54" target="_blank">Icon 54</a></p>

@@ -6,7 +6,7 @@
             <div id="about-content">
                 <p>
                     Hello World! I'm Marc Gravel, a software developer based in Vancouver, B.C. I have a Full-stack Development Diploma from 
-                    Innotech College where I graduated November 2021.
+                    Innotech College where I graduated November 2021. I have been working professionally as a developer since then.
                 </p>
                 <p>
                     I crave knowledge and I love problem solving. I enjoy programming at either end of the tech stack whether it's creating well rounded and effective API's, 
@@ -22,12 +22,8 @@
                     I haven't looked back since.
                 </p>
                 <p>
-                    I first began my journey in the tech world in August 2020. I enrolled into college shortly after to ensure I was 
-                    learning correctly and efficiently. Programming has now turned into a life long passion and career.
-                </p>
-                <p>
                     Outside of work, I compose and produce electronic music as my other main hobby.
-                    I also enjoy snowboarding, travelling, and learning new skills. 
+                    I also enjoy snowboarding, travelling, and exploring new skills. 
                 </p>
             </div>
         </div>
